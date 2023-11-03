@@ -15,12 +15,10 @@ searchBtn.addEventListener('click', ()=> {
 
     // Get Input
     let toSearch = searchText.value
-
-    // Show the loader while fetching data
     if(!toSearch) {
         alert('Please Enter an Ingredient')
-        loader.classList.toggle('active')
     }else {
+        // Show the loader while fetching data
         searchResult.classList.add('inactive')
         loader.classList.toggle('active')
         fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${toSearch}`)
