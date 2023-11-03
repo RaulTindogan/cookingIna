@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: rgb(255, 170, 0)
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.active {
+    display: block !important;
+}
+
+.inactive {
+    display: none !important;
+}
+
+#ingredients-input {
+    width: 80%;
+}
+
+#search-form {
+    border-color: var(--primary-color) !important;
+}
+
+.custom-btn {
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.custom-btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+#submit-btn {
+    width: 20%;
+    background-color: var(--primary-color);
+}
+
+h1, h2{
+    
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+h3 {
+    text-align: center;
+}
+
+.heading-section {
+    max-width: 700px;
+}
+
+input {
+    outline: none;
+}
+
+.cite {
+    color: var(--primary-color);
+}
+
+.recipe-btn {
+    border: 1px solid rgb(214, 214, 214);
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+
+.meal-name {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(40, 40, 40, 0.55);
+    padding: 10px 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.card {
+    height: 350px;
+}
+
+.meal-container {
+    border-color: var(--primary-color) !important;
+    margin-bottom: 20px;
+}
+
+.loader {
+    display: none;
+    border: 8px solid #000000;
+    border-top: 8px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -25px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media (min-width: 576px) {
+    .meal-container {
+        width: 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    .meal-container {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .meal-container {
+        width: 22%;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
